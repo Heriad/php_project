@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Gra w Php</title>
+</head>
+<body>
+  <form action="game.php" method="post">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <div align="center">
+  <h3 id="info">Wprowadź swoją nazwę:</h3>
+  <input type="text" name="player" placeholder="Wprowadź swoją nazwę" required="required" maxlength="8" />
+  <p id="warning">Maksymalnie 8 znaków.</p>
+  <h3 id="info">Wybierz poziom trudności:</h3>
+  <select required="required" name="level">
+    <option value="" disabled="disabled" selected="selected">--Wybierz--</option>
+    <option value="Łatwy">Łatwy</option>
+    <option value="Średni">Średni</option>
+    <option value="Trudny">Trudny</option>
+  </select>
+  <p></p>
+  <input type="submit" value="Kontynuuj" id="przycisk" />
+  </div>
+  <h3 id="rules">Zasady gry:</h3>
+  <ul>
+    <li>Aby ułożyć prawidłowe słowo należy użyć wszystkich liter.<br />Tylko poprawne obliczenia oraz słowa są punktowane. </li>
+  </ul>
+</form>
+</body>
+</html>
